@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Portal de Filmes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
+                        height="24" class="d-inline-block align-text-top">
+                    <span>Filmes</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">entrevistas & makingof</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">novidades</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <input  id="input_Pesquisar" class="div-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search" >
+                        <button class="btn button-Pesquisa" type="click" id="btn_Pesquisar" onclick="PesquisaFilmes"><i class="fas fa-search " ></i></button>
+                      </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" id="home">
+            <div class="carousel-item active">
+                <div class="secao">
+                    <h2>Lançamentos</h2>
+                    <div class="lancamentos">
+                        <div>
+                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/odM92ap8_c0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="info-lancamento">
+                            <h3>Godzilla vs Kong</h3>
+                            <p><strong>Sinopse: </strong>As lendas se enfrentam em "Godzilla vs. Kong", quando esses
+                                adversários
+                                míticos
+                                se encontram em uma espetacular batalha, na qual o destino do mundo entrará em jogo.
+                                Kong e seus
+                                protetores embarcam em uma jornada perigosa para encontrar seu verdadeiro lar. Com eles
+                                está Jia,
+                                uma
+                                jovem órfã que tem uma ligação única e forte com Kong. Mas eles não sabiam que estavam
+                                no caminho de
+                                um
+                                Godzilla enfurecido, que está deixando um rastro de destruição pelo planeta. Esse
+                                combate épico
+                                entre os
+                                dois titãs, instigado por forças ocultas, é apenas o começo do mistério que jaz no
+                                núcleo da Terra.
+                            </p>
+                            <div class="diretor-roteiro-estreia">
+                                <span><strong>Diretor:</strong> Adam Wingard</span>
+                                <span><strong>Roteiro:</strong> Max Borenstein, Eric Pearson, Zach Shields, Michael
+                                    Dougherty e
+                                    Terry
+                                    Rossio</span>
+                                <span><strong>Estreia:</strong> 2021</span>
+                            </div>
+                            <p><strong>Elenco:</strong> Kyle Chandler, Millie Bobby, Alexander Skarsgard, Rebecca Hall,
+                                Brian Tyree, Shun
+                                Oguri, Eliza Gonzalez, Julian Dennison</p>
+                            <p><strong>Avaliação:</strong></p>
+                            <div>
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px" src="https://img.icons8.com/ios/452/star--v1.png"
+                                    alt="Estrela vazia">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="secao">
+                    <h2>Lançamentos</h2>
+                    <div class="lancamentos">
+                        <div>
+                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/4lEpxpZqhjc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="info-lancamento">
+                            <h3>Mortal Kombat</h3>
+                            <p><strong>Sinopse: </strong>Em Mortal Kombat, Shang Tsung, imperador da Exoterra, envia seu
+                                melhor guerreiro, Sub-Zero, para assassinar o jovem Cole Young. Temendo pela segurança
+                                da família, Cole vai em busca de Sonya Blade seguindo a indicação de Jax, um major das
+                                Forças Especiais, que tem a mesma estranha marca de dragão com a qual Cole nasceu. Logo,
+                                ele se vê no templo do Lorde Raiden, um Deus Ancião e guardião do Plano Terreno, que
+                                abriga todos que possuem a marca. No templo, ele treina com os experientes guerreiros
+                                Liu Kang, Kung Lao e Kano, enquanto se prepara para lutar contra os inimigos da Exoterra
+                                em uma batalha pelo universo. Será que Cole irá longe o suficiente para desbloquear sua
+                                arcana - o imenso poder da sua alma - a tempo de salvar não apenas a família, mas
+                                interromper os planos de Shang Tsung de uma vez por todas?
+                            </p>
+                            <div class="diretor-roteiro-estreia">
+                                <span><strong>Diretor:</strong> Simon McQuoid</span>
+                                <span><strong>Roteiro:</strong> Gred Russo, Sean Catherine, David Callaham, Drew
+                                    McWeeny</span>
+                                <span><strong>Estreia:</strong> 2021</span>
+                            </div>
+                            <p><strong>Elenco:</strong> Joe Taslim, Josh Lawson, Lewis tan</p>
+                            <p><strong>Avaliação:</strong></p>
+                            <div>
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px" src="https://img.icons8.com/ios/452/star--v1.png"
+                                    alt="Estrela vazia">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="secao">
+                    <h2>Lançamentos</h2>
+                    <div class="lancamentos">
+                        <div>
+                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Gm3o0bfGP3g"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="info-lancamento">
+                            <h3>Viúva Negra</h3>
+                            <p><strong>Sinopse: </strong>No novo filme da Marvel Studios, "Viúva Negra", Natasha
+                                Romanoff (Scarlett Johansson) precisa confrontar partes de sua história quando surge uma
+                                conspiração perigosa ligada ao seu passado. Perseguida por uma força que não irá parar
+                                até derrotá-la, Natasha terá que lidar com sua antiga vida de espiã, e também
+                                reencontrar membros de sua família que deixou para trás antes de se tornar parte dos
+                                Vingadores.</p>
+                            <div class="diretor-roteiro-estreia">
+                                <span><strong>Diretor:</strong> Cate Shortland</span>
+                                <span><strong>Roteiro:</strong> Stan Lee, Jac Shaeffer, Ned Benson, Don Rico, Eric
+                                    Pearson, Don Heck</span>
+                                <span><strong>Estreia:</strong> 2021</span>
+                            </div>
+                            <p><strong>Elenco:</strong> Scarlett Johansson, Florence Pugh, Robert Downey, Jade Ma,
+                                Jeremy Renner</p>
+                            <p><strong>Avaliação:</strong></p>
+                            <div>
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                                <img height="20px"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                                    alt="Estrela amarela">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="secao">
+        <div class="destaque">
+            <div>
+                <h2>Em Destaque</h2>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categoria: TODOS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Ação/Aventura</a>
+                        <a class="dropdown-item" href="#">Comédial</a>
+                        <a class="dropdown-item" href="#">Drama</a>
+                    </div>
+                </div>
+            </div>
+            <!--* *  * FILMES EM DESTAQUE INICIO * * *-->
+            <div>
+                <section class="row card_area" id="lista_filmes">
+
+                </section>
+            </div>
+            <!--* *  * FILMES EM DESTAQUE FIM * * *-->
+            <div class="d-flex justify-content-end mt-5">
+                <button type="button" class="btn btn-secondary" id="action-btn">+ Carregar mais filmes</button>
+            </div>
+        </div>
+    </div>
+             
+
+        <div class="ultimas-avaliacoes">
+            <h2>Últimas avaliações</h2>
+            <div class="avaliacoes row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h4>Sidney da Silva de Oliveira</h4>
+                    <p><strong>Avaliação: </strong>Uma das formas que eu detecto quando algum filme é bom para mim, é de
+                        eu
+                        ficar
+                        pensando nele depois de assisti-lo, e Vingadores Guerra Infinita é um desses filmes, ainda estou
+                        pensando
+                        nele. A história não é nenhuma obra prima, mas gostei muito da edição, os personagens estão
+                        separados
+                        mas ao
+                        mesmo tempo estão juntos, méritos para os diretores. A cena inicial já é maravilhosa, mostrando
+                        Thanos
+                        chutando muitas bundas, e surrando o Hulk sem esforço nenhum. Thor e Thanos são os melhores no
+                        filme,
+                        Thor
+                        mostrando que é super poderoso e Thanos mostrou que é simplesmente o melhor vilão desse
+                        universo. Não
+                        todos,
+                        mas alguns heróis tem alguma contribuição importante na trama, exemplo disso é o Groot que
+                        ajudou num
+                        momento crucial da história. Vingadores Guerra Infinita é um filme muito bom, deve em alguns
+                        pontos mas
+                        acerta em muitos outros e merece ser assistido mais de uma vez.</p>
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <strong>27/04/2019</strong>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h4>Phelipe de Sousa Santos</h4>
+                    <p><strong>Avaliação: </strong>Os personagens da Hanna Barbera foram muito populares e fizeram um
+                        grande
+                        sucesso
+                        antes dos anos 2000, agora a Warner lança seu novo longa animado, SCOOBY! O Filme, e consegue
+                        trazer o
+                        sentimento nostálgico aos fãs de longa data e ao mesmo tempo agrada as crianças com seus
+                        personagens. O
+                        longa SCOOBY! O Filme é uma história de origem dos famosos personagens da série animada da Hanna
+                        Barbera.
+                        Salsicha e Scooby tem uma conexão instantânea envolvendo comida já em seu primeiro encontro, e
+                        logo se
+                        unem
+                        aos jovens detetives Fred, Velma e Daphne para formar a Mistério S/A. Só que, após resolver
+                        centenas de
+                        casos, eles encontram o desafio de impedir o “apocãolipse”, que virá quando o fantasma do cão
+                        Cerberus
+                        for
+                        liberado no mundo.</p>
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px" src="https://img.icons8.com/ios/452/star--v1.png" alt="Estrela vazia">
+                    <strong>19/12/2020</strong>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h4>Rafaela Souza Teixeira</h4>
+                    <p><strong>Avaliação: </strong>Eu gostei bastante. Muito bom filmes dessa época da Natal que
+                        retratem a
+                        nossa
+                        realidade aqui no Brasil também. É engraçado no geral e consegue superar minhas expectativas em
+                        relação
+                        a
+                        ele na parte final que me emocionou bastante, o filme traz uma lição muito bonita, embora não
+                        muito
+                        inovadora para um filme de Natal, afinal esse filme ainda não escapa de muitos clichês e rros
+                        típicos de
+                        comédias nacionais. As atuações são ok. Não é um filme que tenha nada de impressionante, mas
+                        ainda sim
+                        me
+                        surpreendeu e me agradou bastante, mais do que eu achei. Recomendo!</p>
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png"
+                        alt="Estrela amarela">
+                    <img height="20px" src="https://img.icons8.com/ios/452/star--v1.png" alt="Estrela vazia">
+                    <strong>12/01/2021</strong>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-secondary">+ Carregar mais avaliações</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="entrevistaseMakingof">
+        <h2>Entrevistas & Making of</h2>
+        <div class="making row">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <iframe width="430" height="300" src="https://www.youtube.com/embed/n3adYAu0MsI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><strong>Filme: </strong>Vingadores: Guerra Infinita</p>
+                <p><strong>Diretor: </strong>Joe Ruísso, Anthony Russo</p>
+                <span><strong>Roteiro: </strong>Stephen McFeely, Christopher Markus</strong></span>
+                <span><strong>Estreia: </strong>2018</span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <iframe width="430" height="300" src="https://www.youtube.com/embed/mQIWkJWq_eo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><strong>Filme: </strong>Os 7 de Chicago</p>
+                <p><strong>Diretor: </strong>Aaron Sorkin</p>
+                <span><strong>Roteiro: </strong>Aaron Sorkin</span>
+                <span><strong>Estreia: </strong>2020</span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <iframe width="430" height="300" src="https://www.youtube.com/embed/ZaIQFlU50O0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p><strong>Filme: </strong>Tudo Bem no Natal que Vem</p>
+                <p><strong>Diretor: </strong>Roberto Santucci</p>
+                <span><strong>Roteiro: </strong>Paulo Cursino</span>
+                <span><strong>Estreia: </strong>2020</span>
+            </div>
+        </div>
+    </div>
+    <div class="secaonovidades">
+        <div class="secao col-12 col-sm-12 col-lg-8" style="display: table;">
+            <h2 style="text-align: inherit; margin: revert;">Novidades</h2>
+            <div class="novidades d-md-flex">
+                <div>
+                    <img decoding="async"
+                        alt="Na ordem, 'Meu pai', 'Minari', 'Nomadland', 'Os 7 de Chicago', 'Bela vingança', 'O som do silêncio', 'Mank' e 'Judas e o Messias negro' concorrem ao prêmio de melhor filme no Oscar 2021 — Foto: Divulgação"
+                        srcset=""
+                        src="https://s2.glbimg.com/7A7CjsX7K94GX-UfSLxIs7vET_o=/0x0:1041x621/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/w/6/pWXB3HT8uaMobAFF8jYw/161581527913211.jpg"
+                        class="i-amphtml-fill-content i-amphtml-replaced-content" width="320" height="205" />
+                </div>
+                <div class="info-novidades">
+                    <h6>Oscar 2021: Melhores Filmes</h6>
+                    <p>O Oscar, principal cerimônia de premiação do cinema em Hollywood, está marcada para o dia
+                        25
+                        de
+                        abril.
+                        Os filmes indicados foram: "Meu pai", "Judas e o messias negro", "Mank", "Minari",
+                        "Nomadland",
+                        "Bela
+                        vingança", "O som do silêncio" e "Os 7 de Chicago". Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolores, iusto esse. Non impedit sunt quod dignissimos tempora ut repellendus
+                        perferendis.</p>
+                </div>
+            </div>
+            <div class="novidades d-md-flex">
+                <div>
+                    <img loading="lazy" class="size-full wp-image-469424"
+                        src="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/08/the-kings-man.jpg"
+                        alt="the king's man o início" width="320" height="205"
+                        srcset="https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/08/the-kings-man.jpg 728w, https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/08/the-kings-man-300x159.jpg 300w, https://www.magazine-hd.com/apps/wp/wp-content/uploads/2020/08/the-kings-man-390x205.jpg 390w"
+                        sizes="(max-width: 728px) 100vw, 728px">
+                </div>
+                <div class="info-novidades">
+                    <h6>Hollywood: "The King’s Man", o Filme mais Antecipado de 2021</h6>
+                    <p>Hollywood entrou em pausa durante 2020 mas 2021 já chegou e traz muitas novidades!Em 2020,
+                        Hollywood
+                        estava à espera de grandes blockbusters. De “Mulan” e “Soul” da Disney, até “Dune” da Warner
+                        Bros ou
+                        “007: Sem Tempo para Morrer”, da MGM, tudo foi sendo adiado por causa da pandemia global da
+                        Covid-19. E
+                        se alguns foram para o streaming, outros continuam à espera dos grandes ecrãs e as
+                        audiências
+                        aguardam
+                        ansiosamente.</p>
+                </div>
+            </div>
+            <div class="novidades d-md-flex">
+                <div>
+                    <img alt="Estreias 2022 | Confira os filmes mais aguardados do ano nos cinemas"
+                        src="https://cinema10.com.br/upload/noticias/2019-2/72971520e1.jpg" width="320" height="205">
+                </div>
+                <div class="info-novidades">
+                    <h6>Estreias 2022: Filmes mais Aguardados do ano nos Cinemas</h6>
+                    <p>"Pânico 5", ainda no subgênero slasher, o novo filme acompanhará a jornada de uma mulher
+                        de
+                        volta a
+                        sua cidade natal para tentar descobrir quem é o mascarado que está por trás de uma série de
+                        assassinatos. Courteney Cox (Friends) retorna ao elenco principal. "O Batman", esta será a
+                        estrei de
+                        Robert Pattinson no papel do Morcego de Gotham após Ben Affleck abandonar o papel. O filme
+                        será
+                        dirigido
+                        por Matt Reeves e terá um tom bem sombrio, misturando ação, crime e drama para, novamente,
+                        contar a
+                        origem de um dos personagens mais queridos da DC Comics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="secaosobre col-12 col-sm-12 col-lg-4">
+            <div class="sobre-editorial-redes">
+                <h2 style="margin: revert;">Sobre</h2>
+                <div>
+                    <p> O streaming é a tecnologia de transmissão de dados pela internet, principalmente aúdio e vídeo,
+                        sem a
+                        necessidade de baixar o conteúdo. O arquivo, que pode ser um vídeo ou uma música, é acessado
+                        pelo
+                        usuário
+                        online. O detentor do conteúdo transmite a música ou filme pela internet e esse material não
+                        ocupa
+                        espaço no
+                        computador ou no celular. Algumas plataformas oferecem o download de faixas, apenas para
+                        assinantes. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odio natus
+                        itaque tenetur quia. Dolorem iusto exercitationem minima quod quaerat dolorum ratione natus,
+                        impedit quis eligendi quas pariatur neque rem ea reprehenderit enim iste officiis fuga obcaecati
+                        eaque doloremque facere.</p>
+                </div>
+                <h2>Editorial</h2>
+                <div>
+                    <p><strong>Redação: </strong>Yollanda L. Barbosa</p>
+                    <p><strong>Pesquisa: </strong>Yollanda L. Barbosa</p>
+                    <p><strong>Gerente Geral: </strong>Yollanda L. Barbosa</p>
+                </div>
+                <h3>redes sociais</h3>
+                <div>
+                    <img alt="Facebook Ícone - Download Grátis, PNG e Vetores" class="n3VNCb"
+                        src="https://img.icons8.com/ios-glyphs/452/facebook.png" data-noaft="1" jsname="HiaYvf"
+                        jsaction="load:XAeZkd;" style="width: 90px; height: 90px; margin: 0px;">
+                    <img alt="Twitter logo outline free vector icons designed by Katarina Stefanikova | Twitter  logo, Logo outline, Vector icon design"
+                        class="n3VNCb"
+                        src="https://i.pinimg.com/originals/5f/00/c7/5f00c7df619535d56b7eedd724196ae2.png"
+                        data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"
+                        style="width: 139px; height: 90px; margin: 0px;">
+                    <img alt="Instagram Ícone - Download Grátis, PNG e Vetores" class="n3VNCb"
+                        src="https://img.icons8.com/windows/452/instagram-new.png" data-noaft="1" jsname="HiaYvf"
+                        jsaction="load:XAeZkd;" style="width: 90px; height: 90px; margin: 0px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="secao">
+        <p>Copyright 2020-Disciplina de Desenvolvimento de Interfaces Web- <strong>ICEI PUC MINAS</strong></p>
+        <button type="button" class="btn btn-outline-dark">Logo</button>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
